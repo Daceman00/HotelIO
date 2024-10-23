@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "./Reusable/Button";
 
 function Dashboard() {
   return (
@@ -7,7 +7,7 @@ function Dashboard() {
       <h1 className="text-green_primary text-3xl font-bold mb-4">
         Dashboard Overview
       </h1>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div className="bg-green_primary text-white_primary p-6 rounded-lg shadow-lg">
           <h3>Total Rooms</h3>
           <p className="text-xl">50</p>
