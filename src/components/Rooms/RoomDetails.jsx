@@ -27,22 +27,18 @@ function RoomDetails() {
       {/* Room Information */}
       <div className="p-4 md:p-6 lg:p-8 flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="text-green_primary text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h3 className=" text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             {room.name}
           </h3>
-          <p className="text-green_secondary text-2xl mb-4">
-            ${room.price} / night
-          </p>
+          <p className=" text-2xl mb-4">${room.price} / night</p>
           <p className="text-gray-700 text-base md:text-lg lg:text-xl mb-4">
             {room.description}
           </p>
 
           {/* Room Features */}
           <div className="mb-4">
-            <p className="text-gray-500 text-base md:text-lg mb-2">
-              Beds: {room.beds}
-            </p>
-            <p className="text-gray-500 text-base md:text-lg mb-2">
+            <p className=" text-base md:text-lg mb-2">Beds: {room.beds}</p>
+            <p className=" text-base md:text-lg mb-2">
               Max Occupancy: {room.maxOccupancy}
             </p>
           </div>
@@ -50,10 +46,10 @@ function RoomDetails() {
 
         {/* Book Now Button */}
         <div className="mt-4">
-          <p className="text-lg text-green_primary font-semibold mb-2">
+          <p className="text-lg  font-semibold mb-2">
             {room.status === "Available" ? "Available" : "Booked"}
           </p>
-          <button className="bg-green_primary hover:bg-green_secondary text-white_primary font-bold py-2 md:py-4 w-full rounded-lg transition-transform transform hover:scale-105">
+          <button className=" hover:  font-bold py-2 md:py-4 w-full rounded-lg transition-transform transform hover:scale-105">
             Book Now
           </button>
         </div>

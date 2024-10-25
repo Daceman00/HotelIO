@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function SingleRoom({ room }) {
   return (
-    <div className="bg-white_primary rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+    <div className="animate-fadeInDown -rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
       <div className="relative">
         <img
           src={room.image}
@@ -15,17 +15,15 @@ function SingleRoom({ room }) {
       </div>
       <div className="p-4 flex flex-col justify-between">
         <div>
-          <h3 className="text-green_secondary font-bold text-xl">
-            Room {room.number}
-          </h3>
+          <h3 className="text-font-bold text-xl">Room {room.number}</h3>
           <p className="text-dark_gray mb-2">Type: {room.type}</p>
           <p
             className={`text-${
               room.status === "Available"
                 ? "green_secondary"
                 : room.status === "Occupied"
-                ? "red-500"
-                : "yellow_500"
+                ? ""
+                : ""
             }`}
           >
             Status: {room.status}

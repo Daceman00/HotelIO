@@ -30,11 +30,9 @@ function Bookings() {
   ];
 
   return (
-    <div className="flex-1 p-6 bg-white_secondary">
-      <h1 className="text-green_primary text-3xl font-bold mb-4">
-        Bookings Overview
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="flex-1 p-6 ">
+      <h1 className="text-3xl font-bold mb-4 ">Bookings Overview</h1>
+      <div className="animate-fadeInDown grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-6 ">
         {bookings.map((booking) => (
           <SingleBooking booking={booking} key={booking.id} />
         ))}

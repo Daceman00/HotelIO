@@ -2,7 +2,7 @@ import React from "react";
 
 function SingleBooking(booking) {
   return (
-    <div className="bg-green_primary text-white_primary p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+    <div className=" text-white_primary p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
       <h3 className="text-xl font-bold mb-2">{booking.guestName}</h3>
       <p className="mb-1">Room: {booking.roomNumber}</p>
       <p className="mb-1">
@@ -18,8 +18,8 @@ function SingleBooking(booking) {
             booking.status === "Confirmed"
               ? "text-green_secondary"
               : booking.status === "Pending"
-              ? "text-yellow-400"
-              : "text-red-500"
+              ? ""
+              : ""
           }`}
         >
           {booking.status}
